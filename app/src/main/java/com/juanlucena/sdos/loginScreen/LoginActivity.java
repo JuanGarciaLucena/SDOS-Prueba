@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+
 import com.juanlucena.sdos.R;
 import com.juanlucena.sdos.webserviceScreen.WebserviceActivity;
 import com.juanlucena.sdos.model.User;
@@ -24,8 +26,8 @@ public class LoginActivity extends AppCompatActivity implements LoginScreen{
 
     @BindView(R.id.editTextUsername) EditText editTextUsername;
     @BindView(R.id.editTextPassword) EditText editTextPassword;
-    @BindView(R.id.loadingFragment) LinearLayout loadingFragment;
     @BindView(R.id.parentView) View parentView;
+    @BindView(R.id.loadingFragment) LinearLayout loadingFragment;
 
     private final String USER_ID = "userId";
     private final String IS_ADMIN = "isAdmin";

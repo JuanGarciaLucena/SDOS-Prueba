@@ -1,59 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
+    android:id="@+id/parentView"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/parentView"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        tools:context="com.juanlucena.sdos.loginScreen.LoginActivity">
 
-        <LinearLayout
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="83dp"
+            android:src="@drawable/logo_sdos"/>
+
+        <EditText
+            android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginTop="90dp">
+            android:layout_height="50dp"
+            android:background="@drawable/border_edit_text"
+            android:hint="@string/loginUsername"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:layout_margin="10dp"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                android:src="@drawable/logo_sdos"/>
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_edit_text"
+            android:hint="@string/loginPassword"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:layout_margin="10dp"/>
 
-            <EditText
-                android:id="@+id/editTextUsername"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/border_edit_text"
-                android:hint="@string/loginUsername"
-                android:inputType="textEmailAddress"
-                android:padding="10dp"
-                android:layout_margin="10dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_buttons"
+            android:textColor="@android:color/white"
+            android:text="@string/login"
+            android:layout_margin="10dp"
+            android:onClick="doLogin"/>
 
-            <EditText
-                android:id="@+id/editTextPassword"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/border_edit_text"
-                android:hint="@string/loginPassword"
-                android:inputType="textPassword"
-                android:padding="10dp"
-                android:layout_margin="10dp"/>
+    </LinearLayout>
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/border_buttons"
-                android:textColor="@android:color/white"
-                android:text="@string/login"
-                android:layout_margin="10dp"
-                android:onClick="doLogin"/>
+    <include layout="@layout/fragment_loading"/>
 
-        </LinearLayout>
-
-        <include layout="@layout/fragment_loading"/>
-    </RelativeLayout>
-
-</ScrollView>
+</RelativeLayout>
