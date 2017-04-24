@@ -1,56 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/parentView"
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
+        android:id="@+id/parentView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        tools:context="com.juanlucena.sdos.loginScreen.LoginActivity">
+        android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitXY"
-            android:src="@drawable/logo_sdos"/>
-
-        <EditText
-            android:id="@+id/editTextUsername"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/border_edit_text"
-            android:hint="@string/loginUsername"
-            android:inputType="textEmailAddress"
-            android:padding="10dp"
-            android:layout_margin="10dp"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="90dp">
 
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/border_edit_text"
-            android:hint="@string/loginPassword"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo_sdos"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/border_buttons"
-            android:textColor="@android:color/white"
-            android:text="@string/login"
-            android:layout_margin="10dp"
-            android:onClick="doLogin"/>
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_edit_text"
+                android:hint="@string/loginUsername"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:layout_margin="10dp"/>
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_edit_text"
+                android:hint="@string/loginPassword"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:layout_margin="10dp"/>
 
-    <include layout="@layout/fragment_loading"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_buttons"
+                android:textColor="@android:color/white"
+                android:text="@string/login"
+                android:layout_margin="10dp"
+                android:onClick="doLogin"/>
 
-</RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/fragment_loading"/>
+    </RelativeLayout>
+
+</ScrollView>
