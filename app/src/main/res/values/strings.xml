@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Strings globales -->
+    <string name="app_name">SDOS Test</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+
+
+    <!-- Strings usados en la pantalla LoginActivity-->
+    <string name="loginUsername">Username</string>
+    <string name="loginPassword">Password</string>
+    <string name="login">Login</string>
+    <string name="loginCredentialsError">Wrong username or password</string>
+    <string name="loginBuildingDatabase">Construyendo la base de datos</string>
+    <string name="loginDatabaseInitialized">Base de datos preparada</string>
+
+    <!--Strings usados en WebserviceActivity-->
+    <string name="webserviceExit">Salir</string>
+    <string name="webserviceExitConfirmation">Esta seguro que quiere salir</string>
+    <string name="webserviceBackAgainToExit">Haga click en ATRÁS de nuevo para salir</string>
+    <string name="webServiceLoadingElements">Cargando elementos</string>
+    <string name="webserviceLabelBusiness">Empresa</string>
+    <string name="webserviceLabelZip">Código Postal</string>
+    <string name="webserviceLabelPhone">Teléfono</string>
+    <string name="webserviceLabelItem">Producto</string>
+
+    <!-- Strings usados en AddTaskActivity -->
+    <string name="addTaskChooseTask">Seleccione una tarea</string>
+    <string name="addTaskAsignTech">Asignar técnico</string>
+    <string name="addTaskTime">Duración de la tarea</string>
+    <string name="addTaskDescription">Descripción de la tarea</string>
+
+    <!-- Strings usados en TaskListActivity -->
+    <string name="taskListLabelName">Tarea:</string>
+    <string name="taskListLabelStimatedTime">Tiempo estimado:</string>
+    <string name="taskListLabelDescription">Descripción:</string>
+
+    <string name="stringSave">Guardar</string>
+
+
+    <array name="valuesTask">
+        <item>Reponedor de productos</item>
+        <item>Cobrar</item>
+        <item>Envolver</item>
+        <item>Otras</item>
+    </array>
+</resources>

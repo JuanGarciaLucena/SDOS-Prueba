@@ -1,0 +1,17 @@
+package com.juanlucena.sdos.utils;
+
+import android.content.Context;
+
+import java.io.File;
+
+public class Utils {
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////// OPERACIONES SOBRE BASE DE DATOS //////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //Comprobamos si existe la base de datos
+    public static boolean checkIfDbExists(Context context){
+        File dbFile = context.getDatabasePath("sdos_app.db");
+        return dbFile.exists();
+    }
+}
